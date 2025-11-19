@@ -2,758 +2,442 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
-    <meta name="description" content="The Unlock Sales - Digital Marketing, Business Database & Website Creation Services. Get 40 category city database for ₹2,999 & professional websites from ₹2,499">
-    <meta name="keywords" content="business database, digital marketing, website creation, lead generation, verified database India">
-    <title>The Unlock Sales | Database, Marketing & Website Services</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Unlock Sales | Verified Database, Website Creation & Digital Marketing</title>
     
-    <!-- Fonts -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     
-    <!-- Particles.js -->
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    
-    <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- ==================== NAVBAR ==================== -->
+    <!-- NAVBAR -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <a href="#home" class="logo">
-                <div class="logo-icon">TUS</div>
+            <div class="logo">
+                <div class="logo-circle">TUS</div>
                 <div class="logo-text">
-                    <span class="logo-name">The Unlock Sales</span>
-                    <span class="logo-tagline">Unlock Growth & Leads</span>
+                    <h2>The Unlock Sales</h2>
+                    <p>Unlock Growth & Leads</p>
                 </div>
-            </a>
-            
-            <div class="nav-menu">
-                <a href="#home" class="nav-link active">Home</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#services" class="nav-link">Services</a>
-                <a href="#portfolio" class="nav-link">Portfolio</a>
-                <a href="#contact" class="nav-link btn-nav-cta">
-                    <i data-lucide="phone"></i> Contact Us
-                </a>
             </div>
-            
-            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu">
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <a href="https://wa.me/918629933125?text=Hi%20TUS,%20I%20want%20to%20discuss%20business%20growth" class="btn-cta" target="_blank">
+                <i class="fab fa-whatsapp"></i> WhatsApp Us
+            </a>
+
+            <div class="hamburger" id="hamburger">
                 <span></span>
                 <span></span>
                 <span></span>
-            </button>
-        </div>
-        
-        <div class="mobile-menu" id="mobileMenu">
-            <a href="#home" class="mobile-link">🏠 Home</a>
-            <a href="#about" class="mobile-link">ℹ️ About</a>
-            <a href="#services" class="mobile-link">🎯 Services</a>
-            <a href="#portfolio" class="mobile-link">💼 Portfolio</a>
-            <a href="#contact" class="mobile-link">📞 Contact Us</a>
+            </div>
         </div>
     </nav>
 
-    <!-- ==================== HERO SECTION ==================== -->
+    <!-- HERO SECTION -->
     <section class="hero" id="home">
-        <div id="particles-js" class="particles-bg"></div>
-        
-        <div class="hero-content">
-            <div class="hero-badge">
-                <i data-lucide="sparkles"></i>
-                <span>Opening Soon: Indore | Surat | Ahmedabad</span>
-            </div>
-            
-            <h1 class="hero-title">
-                Unlock <span class="highlight">Real Business Growth</span> with Verified Data & Marketing
-            </h1>
-            
-            <p class="hero-subtitle">
-                Get verified business databases across 40 categories, professional website creation, and result-driven digital marketing services. We help businesses find genuine customers and scale rapidly.
-            </p>
-            
-            <div class="hero-buttons">
-                <a href="#services" class="btn-primary">
-                    <i data-lucide="rocket"></i> Explore Services
-                </a>
-                <a href="https://api.whatsapp.com/send?phone=918629933125&text=Hi%20TUS,%20I%20want%20to%20discuss%20business%20growth" target="_blank" class="btn-secondary">
-                    <i data-lucide="message-circle"></i> Chat on WhatsApp
-                </a>
-            </div>
-            
-            <div class="hero-stats">
-                <div class="stat-item">
-                    <div class="stat-number" data-target="30">0</div>
-                    <div class="stat-label">Projects Delivered</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number" data-target="28">0</div>
-                    <div class="stat-label">Happy Clients</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number" data-target="40">0</div>
-                    <div class="stat-label">Database Categories</div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="scroll-indicator">
-            <span>Scroll to explore</span>
-            <i data-lucide="chevron-down"></i>
-        </div>
-    </section>
-
-    <!-- ==================== ABOUT SECTION ==================== -->
-    <section class="about-section" id="about">
+        <div class="hero-bg"></div>
         <div class="container">
-            <div class="section-header reveal-top">
-                <span class="section-tag">ABOUT US</span>
-                <h2 class="section-title">
-                    Why Choose <span class="highlight">The Unlock Sales?</span>
-                </h2>
-                <p class="section-subtitle">
-                    We're India's first digital marketing agency providing comprehensive 40-category business databases with complete website and marketing solutions.
-                </p>
-            </div>
-            
-            <div class="about-content">
-                <div class="about-text reveal-left">
-                    <p class="about-description">
-                        The Unlock Sales specializes in unlocking business opportunities through verified databases, professional websites, and data-driven digital marketing strategies. We provide genuine business leads across 40 different categories including jewellery shops, hardware stores, retail outlets, restaurants, and more.
-                    </p>
-                    
-                    <p class="about-description">
-                        Our mission is simple: connect businesses with real buyers. With offices opening soon in Indore, Surat, and Ahmedabad, we're expanding our reach to serve more businesses across India.
-                    </p>
-                    
-                    <div class="about-features">
-                        <div class="feature-box">
-                            <i data-lucide="database"></i>
-                            <div>
-                                <h4>40 Categories Database</h4>
-                                <p>First in India to offer complete city database</p>
-                            </div>
-                        </div>
-                        
-                        <div class="feature-box">
-                            <i data-lucide="check-circle"></i>
-                            <div>
-                                <h4>100% Verified Data</h4>
-                                <p>Genuine leads with contact details</p>
-                            </div>
-                        </div>
-                        
-                        <div class="feature-box">
-                            <i data-lucide="globe"></i>
-                            <div>
-                                <h4>Professional Websites</h4>
-                                <p>Mobile-first, SEO-optimized designs</p>
-                            </div>
-                        </div>
-                        
-                        <div class="feature-box">
-                            <i data-lucide="trending-up"></i>
-                            <div>
-                                <h4>Digital Marketing</h4>
-                                <p>Result-driven campaigns & strategies</p>
-                            </div>
-                        </div>
-                    </div>
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-star"></i>
+                    <span>Opening Soon: Satellite Junction Indore</span>
                 </div>
+                <h1 class="hero-title">Unlock <span class="highlight">Real Business Growth</span> with Verified Data</h1>
+                <p class="hero-subtitle">Get 40-category verified business databases, professional website creation, and result-driven digital marketing services to scale your business rapidly.</p>
                 
-                <div class="about-visual reveal-right">
-                    <div class="visual-card">
-                        <i data-lucide="map-pin"></i>
-                        <h3>Expanding Across India</h3>
-                        <p>Opening Soon in:</p>
-                        <div class="city-badges">
-                            <span class="city-badge">📍 Indore</span>
-                            <span class="city-badge">📍 Surat</span>
-                            <span class="city-badge">📍 Ahmedabad</span>
-                        </div>
-                        <p style="margin-top: 20px; font-size: 0.95rem;">Join hundreds of businesses already growing with The Unlock Sales</p>
+                <div class="hero-buttons">
+                    <a href="#services" class="btn-primary">
+                        <i class="fas fa-rocket"></i> Explore Services
+                    </a>
+                    <a href="#contact" class="btn-secondary">
+                        <i class="fas fa-phone"></i> Contact Us
+                    </a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat-box">
+                        <h3 class="stat-number" data-target="30">0</h3>
+                        <p class="stat-label">Projects Delivered</p>
                     </div>
+                    <div class="stat-box">
+                        <h3 class="stat-number" data-target="28">0</h3>
+                        <p class="stat-label">Happy Clients</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3 class="stat-number" data-target="40">0</h3>
+                        <p class="stat-label">Business Categories</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">About Us</span>
+                <h2 class="section-title">Why Choose <span class="highlight">The Unlock Sales?</span></h2>
+                <p class="section-description">India's first agency providing 40-category verified business databases with complete website and marketing solutions</p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="card-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>40 Categories Database</h3>
+                    <p>Complete verified business data including jewellery, hardware, retail, restaurants & 36 more categories</p>
+                </div>
+
+                <div class="about-card">
+                    <div class="card-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>100% Verified Data</h3>
+                    <p>Genuine business leads with verified contact numbers and complete business information</p>
+                </div>
+
+                <div class="about-card">
+                    <div class="card-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Professional Websites</h3>
+                    <p>Mobile-first, SEO-optimized websites with WhatsApp integration and fast loading speeds</p>
+                </div>
+
+                <div class="about-card">
+                    <div class="card-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Digital Marketing</h3>
+                    <p>Result-driven campaigns, social media management, and targeted lead generation strategies</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ==================== SERVICES SECTION ==================== -->
-    <section class="services-section" id="services">
+    <!-- SERVICES SECTION -->
+    <section class="services" id="services">
         <div class="container">
-            <div class="section-header reveal-top">
-                <span class="section-tag">OUR SERVICES</span>
-                <h2 class="section-title">
-                    Premium Products & <span class="highlight">Services</span>
-                </h2>
-                <p class="section-subtitle">
-                    Choose from our best-selling database packs, professional website creation, and comprehensive digital marketing solutions.
-                </p>
+            <div class="section-header">
+                <span class="section-tag">Our Services</span>
+                <h2 class="section-title">Premium Products & <span class="highlight">Services</span></h2>
+                <p class="section-description">Choose from our best-selling database packs, professional websites, and digital marketing solutions</p>
             </div>
-            
+
             <div class="services-grid">
-                <!-- SERVICE 1: BEST SELLER - Database Pack -->
-                <div class="service-card reveal-bottom featured-card" data-service="database">
-                    <span class="best-seller-badge">🏆 BEST SELLER</span>
-                    <div class="service-front">
-                        <div class="service-icon">
-                            <i data-lucide="database"></i>
-                        </div>
-                        <h3>40 Category City Database</h3>
-                        <div class="service-price">₹2,999</div>
-                        <p class="service-desc">
-                            Complete verified business database for any city across 40 categories
-                        </p>
-                        <span class="service-hint mobile-only">👆 Tap for details</span>
-                        <span class="service-hint desktop-only">→ Hover for details</span>
+                <!-- Service 1 -->
+                <div class="service-card" data-card="1">
+                    <div class="badge best-seller">🏆 BEST SELLER</div>
+                    <div class="service-icon">
+                        <i class="fas fa-database"></i>
                     </div>
-                    <div class="service-back">
-                        <h4>What's Included:</h4>
-                        <ul>
-                            <li>✅ 40 Business Categories</li>
-                            <li>✅ Jewellery, Hardware, Retail & More</li>
-                            <li>✅ Verified Contact Numbers</li>
-                            <li>✅ Business Names & Addresses</li>
-                            <li>✅ Excel/CSV Format</li>
-                            <li>✅ 24-Hour Delivery</li>
-                            <li>✅ Money-Back Guarantee</li>
-                        </ul>
-                        <a href="https://api.whatsapp.com/send?phone=918629933125&text=Hi,%20I%20want%20to%20purchase%2040%20Category%20City%20Database%20for%20₹2,999" target="_blank" class="btn-whatsapp">
-                            <i data-lucide="shopping-cart"></i> Order Now
-                        </a>
-                    </div>
+                    <h3 class="service-title">40 Category City Database</h3>
+                    <div class="service-price">₹2,999</div>
+                    <p class="service-desc">Complete verified business database for any city across 40 categories</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> 40 Business Categories</li>
+                        <li><i class="fas fa-check"></i> Verified Contact Numbers</li>
+                        <li><i class="fas fa-check"></i> Business Names & Addresses</li>
+                        <li><i class="fas fa-check"></i> Excel/CSV Format</li>
+                        <li><i class="fas fa-check"></i> 24-Hour Delivery</li>
+                    </ul>
+                    <a href="https://wa.me/918629933125?text=I%20want%2040%20Category%20Database%20₹2999" class="btn-service" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Order Now
+                    </a>
                 </div>
-                
-                <!-- SERVICE 2: Website Creation -->
-                <div class="service-card reveal-bottom featured-card" data-service="website">
-                    <span class="best-seller-badge" style="background: linear-gradient(135deg, #10B981, #059669);">⭐ POPULAR</span>
-                    <div class="service-front">
-                        <div class="service-icon">
-                            <i data-lucide="layout"></i>
-                        </div>
-                        <h3>Professional Website</h3>
-                        <div class="service-price">₹2,499</div>
-                        <p class="service-desc">
-                            Mobile-first, SEO-optimized website with WhatsApp integration
-                        </p>
-                        <span class="service-hint mobile-only">👆 Tap for details</span>
-                        <span class="service-hint desktop-only">→ Hover for details</span>
+
+                <!-- Service 2 -->
+                <div class="service-card featured" data-card="2">
+                    <div class="badge popular">⭐ MOST POPULAR</div>
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
                     </div>
-                    <div class="service-back">
-                        <h4>What's Included:</h4>
-                        <ul>
-                            <li>✅ Mobile-First Responsive Design</li>
-                            <li>✅ Custom Professional Layout</li>
-                            <li>✅ WhatsApp Integration</li>
-                            <li>✅ SEO Optimized</li>
-                            <li>✅ Fast Loading Speed</li>
-                            <li>✅ Free 1-Year Support</li>
-                            <li>✅ Domain & Hosting Included</li>
-                        </ul>
-                        <a href="https://api.whatsapp.com/send?phone=918629933125&text=Hi,%20I%20want%20a%20professional%20website%20for%20₹2,499" target="_blank" class="btn-whatsapp">
-                            <i data-lucide="shopping-cart"></i> Order Now
-                        </a>
-                    </div>
+                    <h3 class="service-title">Professional Website Creation</h3>
+                    <div class="service-price">₹2,499</div>
+                    <p class="service-desc">Mobile-first, SEO-optimized websites with WhatsApp integration</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Responsive Design</li>
+                        <li><i class="fas fa-check"></i> WhatsApp Integration</li>
+                        <li><i class="fas fa-check"></i> SEO Optimized</li>
+                        <li><i class="fas fa-check"></i> Fast Loading Speed</li>
+                        <li><i class="fas fa-check"></i> 1-Year Free Support</li>
+                    </ul>
+                    <a href="https://wa.me/918629933125?text=I%20want%20Professional%20Website%20₹2499" class="btn-service" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Order Now
+                    </a>
                 </div>
-                
-                <!-- SERVICE 3: Digital Marketing -->
-                <div class="service-card reveal-bottom" data-service="marketing">
-                    <div class="service-front">
-                        <div class="service-icon">
-                            <i data-lucide="megaphone"></i>
-                        </div>
-                        <h3>Digital Marketing</h3>
-                        <div class="service-price">From ₹5,999/mo</div>
-                        <p class="service-desc">
-                            Complete social media management and targeted advertising
-                        </p>
-                        <span class="service-hint mobile-only">👆 Tap for details</span>
-                        <span class="service-hint desktop-only">→ Hover for details</span>
+
+                <!-- Service 3 -->
+                <div class="service-card" data-card="3">
+                    <div class="service-icon">
+                        <i class="fas fa-bullhorn"></i>
                     </div>
-                    <div class="service-back">
-                        <h4>What's Included:</h4>
-                        <ul>
-                            <li>✅ Social Media Management</li>
-                            <li>✅ Content Creation</li>
-                            <li>✅ Meta/Google Ads</li>
-                            <li>✅ Lead Generation Campaigns</li>
-                            <li>✅ Analytics & Reporting</li>
-                            <li>✅ Monthly Strategy Calls</li>
-                        </ul>
-                        <a href="https://api.whatsapp.com/send?phone=918629933125&text=Hi,%20I%20want%20digital%20marketing%20services" target="_blank" class="btn-whatsapp">
-                            <i data-lucide="phone"></i> Discuss Requirements
-                        </a>
-                    </div>
-                </div>
-                
-                <!-- SERVICE 4: Category Database -->
-                <div class="service-card reveal-bottom" data-service="category">
-                    <div class="service-front">
-                        <div class="service-icon">
-                            <i data-lucide="filter"></i>
-                        </div>
-                        <h3>Specific Category Database</h3>
-                        <div class="service-price">₹4,999</div>
-                        <p class="service-desc">
-                            Targeted leads from specific business category
-                        </p>
-                        <span class="service-hint mobile-only">👆 Tap for details</span>
-                        <span class="service-hint desktop-only">→ Hover for details</span>
-                    </div>
-                    <div class="service-back">
-                        <h4>What's Included:</h4>
-                        <ul>
-                            <li>✅ Any Single Category</li>
-                            <li>✅ State-wide Coverage</li>
-                            <li>✅ Verified Contacts</li>
-                            <li>✅ Detailed Information</li>
-                            <li>✅ Excel/CSV Format</li>
-                            <li>✅ Quick Delivery</li>
-                        </ul>
-                        <a href="https://api.whatsapp.com/send?phone=918629933125&text=Hi,%20I%20want%20specific%20category%20database" target="_blank" class="btn-whatsapp">
-                            <i data-lucide="shopping-cart"></i> Order Now
-                        </a>
-                    </div>
-                </div>
-                
-                <!-- SERVICE 5: State Database -->
-                <div class="service-card reveal-bottom" data-service="state">
-                    <div class="service-front">
-                        <div class="service-icon">
-                            <i data-lucide="map"></i>
-                        </div>
-                        <h3>Complete State Database</h3>
-                        <div class="service-price">₹7,999</div>
-                        <p class="service-desc">
-                            Full state-wide business database across categories
-                        </p>
-                        <span class="service-hint mobile-only">👆 Tap for details</span>
-                        <span class="service-hint desktop-only">→ Hover for details</span>
-                    </div>
-                    <div class="service-back">
-                        <h4>What's Included:</h4>
-                        <ul>
-                            <li>✅ Entire State Coverage</li>
-                            <li>✅ Multiple Categories</li>
-                            <li>✅ 10,000+ Verified Leads</li>
-                            <li>✅ Complete Contact Details</li>
-                            <li>✅ City-wise Segregation</li>
-                            <li>✅ Priority Support</li>
-                        </ul>
-                        <a href="https://api.whatsapp.com/send?phone=918629933125&text=Hi,%20I%20want%20complete%20state%20database" target="_blank" class="btn-whatsapp">
-                            <i data-lucide="shopping-cart"></i> Order Now
-                        </a>
-                    </div>
-                </div>
-                
-                <!-- SERVICE 6: Bundle Package -->
-                <div class="service-card reveal-bottom" data-service="bundle">
-                    <div class="service-front">
-                        <div class="service-icon">
-                            <i data-lucide="package"></i>
-                        </div>
-                        <h3>Database + Marketing Bundle</h3>
-                        <div class="service-price">₹9,999</div>
-                        <p class="service-desc">
-                            Database pack + 1 month digital marketing combo
-                        </p>
-                        <span class="service-hint mobile-only">👆 Tap for details</span>
-                        <span class="service-hint desktop-only">→ Hover for details</span>
-                    </div>
-                    <div class="service-back">
-                        <h4>What's Included:</h4>
-                        <ul>
-                            <li>✅ City Database (40 Categories)</li>
-                            <li>✅ 1 Month Social Media Management</li>
-                            <li>✅ Content Creation</li>
-                            <li>✅ Ad Campaign Setup</li>
-                            <li>✅ Lead Nurturing Strategy</li>
-                            <li>✅ Best Value Package</li>
-                        </ul>
-                        <a href="https://api.whatsapp.com/send?phone=918629933125&text=Hi,%20I%20want%20the%20bundle%20package" target="_blank" class="btn-whatsapp">
-                            <i data-lucide="shopping-cart"></i> Get Bundle
-                        </a>
-                    </div>
+                    <h3 class="service-title">Digital Marketing</h3>
+                    <div class="service-price">From ₹5,999/mo</div>
+                    <p class="service-desc">Complete social media management and targeted advertising</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Social Media Management</li>
+                        <li><i class="fas fa-check"></i> Content Creation</li>
+                        <li><i class="fas fa-check"></i> Meta/Google Ads</li>
+                        <li><i class="fas fa-check"></i> Lead Generation</li>
+                        <li><i class="fas fa-check"></i> Analytics & Reporting</li>
+                    </ul>
+                    <a href="https://wa.me/918629933125?text=I%20want%20Digital%20Marketing%20Services" class="btn-service" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Get Started
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ==================== PORTFOLIO SECTION ==================== -->
-    <section class="portfolio-section" id="portfolio">
+    <!-- PORTFOLIO SECTION -->
+    <section class="portfolio" id="portfolio">
         <div class="container">
-            <div class="section-header reveal-top">
-                <span class="section-tag">OUR WORK</span>
-                <h2 class="section-title">
-                    Website <span class="highlight">Portfolio</span>
-                </h2>
-                <p class="section-subtitle">
-                    Explore our expertly crafted demo websites across 8+ industries. Each showcases unique design and functionality.
-                </p>
+            <div class="section-header">
+                <span class="section-tag">Our Work</span>
+                <h2 class="section-title">Website <span class="highlight">Portfolio</span></h2>
+                <p class="section-description">Explore our expertly crafted demo websites across multiple industries</p>
             </div>
-            
+
             <div class="portfolio-grid">
-                <!-- Portfolio Item 1 -->
-                <div class="portfolio-item reveal-bottom" data-portfolio="restaurant">
+                <div class="portfolio-card">
                     <div class="portfolio-image">
-                        <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #FF6B6B, #FF8E53);">
-                            <i data-lucide="utensils"></i>
+                        <div class="portfolio-overlay">
+                            <h3>Restaurant Website</h3>
+                            <p>Spice Garden Restaurant</p>
+                            <a href="https://wa.me/918629933125?text=Show%20me%20Restaurant%20demo" class="btn-view" target="_blank">
+                                <i class="fas fa-eye"></i> View Demo
+                            </a>
                         </div>
                     </div>
-                    <div class="portfolio-content">
-                        <span class="portfolio-category">Restaurant</span>
-                        <h3 class="portfolio-name">Flavor Fusion Restaurant</h3>
-                        <p class="portfolio-desc">Modern restaurant website with online menu and table booking</p>
-                        <div class="portfolio-tags">
-                            <span class="tech-tag">Mobile-First</span>
-                            <span class="tech-tag">WhatsApp</span>
-                            <span class="tech-tag">Menu Display</span>
-                        </div>
-                        <a href="https://theunlocksales.github.io/cafe/" target="_blank" class="btn-view">
-                            <i data-lucide="eye"></i> View Demo
-                        </a>
-                    </div>
+                    <div class="portfolio-gradient" style="background: linear-gradient(135deg, #FF6B6B, #FF8E53);"></div>
+                    <div class="portfolio-icon"><i class="fas fa-utensils"></i></div>
                 </div>
-                
-                <!-- Portfolio Item 2 -->
-                <div class="portfolio-item reveal-bottom" data-portfolio="jewellery">
+
+                <div class="portfolio-card">
                     <div class="portfolio-image">
-                        <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #FDCB58, #FFD700);">
-                            <i data-lucide="gem"></i>
+                        <div class="portfolio-overlay">
+                            <h3>Gym Website</h3>
+                            <p>FitLife Fitness Center</p>
+                            <a href="https://wa.me/918629933125?text=Show%20me%20Gym%20demo" class="btn-view" target="_blank">
+                                <i class="fas fa-eye"></i> View Demo
+                            </a>
                         </div>
                     </div>
-                    <div class="portfolio-content">
-                        <span class="portfolio-category">Interior Designer</span>
-                        <h3 class="portfolio-name">AURA INTERIORS</h3>
-                        <p class="portfolio-desc">Elegant Designs showcase with catalog and inquiry system</p>
-                        <div class="portfolio-tags">
-                            <span class="tech-tag">Gallery</span>
-                            <span class="tech-tag">Responsive</span>
-                            <span class="tech-tag">Catalog</span>
-                        </div>
-                        <a href="https://theunlocksales.github.io/interior/" target="_blank" class="btn-view">
-                            <i data-lucide="eye"></i> View Demo
-                        </a>
-                    </div>
+                    <div class="portfolio-gradient" style="background: linear-gradient(135deg, #667EEA, #764BA2);"></div>
+                    <div class="portfolio-icon"><i class="fas fa-dumbbell"></i></div>
                 </div>
-                
-                <!-- Portfolio Item 3 -->
-                <div class="portfolio-item reveal-bottom" data-portfolio="gym">
+
+                <div class="portfolio-card">
                     <div class="portfolio-image">
-                        <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #667EEA, #764BA2);">
-                            <i data-lucide="dumbbell"></i>
+                        <div class="portfolio-overlay">
+                            <h3>Education Website</h3>
+                            <p>Excel Coaching Institute</p>
+                            <a href="https://wa.me/918629933125?text=Show%20me%20Education%20demo" class="btn-view" target="_blank">
+                                <i class="fas fa-eye"></i> View Demo
+                            </a>
                         </div>
                     </div>
-                    <div class="portfolio-content">
-                        <span class="portfolio-category">Fitness</span>
-                        <h3 class="portfolio-name">Iron Forge Fitness</h3>
-                        <p class="portfolio-desc">Dynamic gym website with membership plans and trainer profiles</p>
-                        <div class="portfolio-tags">
-                            <span class="tech-tag">Membership</span>
-                            <span class="tech-tag">Plans</span>
-                            <span class="tech-tag">Contact</span>
-                        </div>
-                        <a href="https://theunlocksales.github.io/gym/" target="_blank" class="btn-view">
-                            <i data-lucide="eye"></i> View Demo
-                        </a>
-                    </div>
+                    <div class="portfolio-gradient" style="background: linear-gradient(135deg, #11998E, #38EF7D);"></div>
+                    <div class="portfolio-icon"><i class="fas fa-graduation-cap"></i></div>
                 </div>
-                
-                <!-- Portfolio Item 4 -->
-                <div class="portfolio-item reveal-bottom" data-portfolio="coaching">
+
+                <div class="portfolio-card">
                     <div class="portfolio-image">
-                        <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #11998E, #38EF7D);">
-                            <i data-lucide="graduation-cap"></i>
+                        <div class="portfolio-overlay">
+                            <h3>Jewellery Website</h3>
+                            <p>Royal Jewellers</p>
+                            <a href="https://wa.me/918629933125?text=Show%20me%20Jewellery%20demo" class="btn-view" target="_blank">
+                                <i class="fas fa-eye"></i> View Demo
+                            </a>
                         </div>
                     </div>
-                    <div class="portfolio-content">
-                        <span class="portfolio-category">Education</span>
-                        <h3 class="portfolio-name">Excel Coaching Institute</h3>
-                        <p class="portfolio-desc">Comprehensive coaching website with course details and enrollment</p>
-                        <div class="portfolio-tags">
-                            <span class="tech-tag">Courses</span>
-                            <span class="tech-tag">Enrollment</span>
-                            <span class="tech-tag">Results</span>
-                        </div>
-                        <a href="https://theunlocksales.github.io/coaching/" target="_blank" class="btn-view">
-                            <i data-lucide="eye"></i> View Demo
-                        </a>
-                    </div>
+                    <div class="portfolio-gradient" style="background: linear-gradient(135deg, #FDCB58, #FFD700);"></div>
+                    <div class="portfolio-icon"><i class="fas fa-gem"></i></div>
                 </div>
-                
-                <!-- Portfolio Item 5 -->
-                <div class="portfolio-item reveal-bottom" data-portfolio="hospital">
+
+                <div class="portfolio-card">
                     <div class="portfolio-image">
-                        <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #4FACFE, #00F2FE);">
-                            <i data-lucide="heart-pulse"></i>
+                        <div class="portfolio-overlay">
+                            <h3>Hospital Website</h3>
+                            <p>LifeCare Hospital</p>
+                            <a href="https://wa.me/918629933125?text=Show%20me%20Hospital%20demo" class="btn-view" target="_blank">
+                                <i class="fas fa-eye"></i> View Demo
+                            </a>
                         </div>
                     </div>
-                    <div class="portfolio-content">
-                        <span class="portfolio-category">Event Management</span>
-                        <h3 class="portfolio-name">Enchanted Moments</h3>
-                        <p class="portfolio-desc">Professional event management company website with product profiles and appointments</p>
-                        <div class="portfolio-tags">
-                            <span class="tech-tag">Planners</span>
-                            <span class="tech-tag">Appointments</span>
-                            <span class="tech-tag">Services</span>
-                        </div>
-                        <a href="https://theunlocksales.github.io/coaching/" target="_blank" class="btn-view">
-                            <i data-lucide="eye"></i> View Demo
-                        </a>
-                    </div>
+                    <div class="portfolio-gradient" style="background: linear-gradient(135deg, #4FACFE, #00F2FE);"></div>
+                    <div class="portfolio-icon"><i class="fas fa-heart-pulse"></i></div>
                 </div>
-                
-                <!-- Portfolio Item 6 -->
-                <div class="portfolio-item reveal-bottom" data-portfolio="realtor">
+
+                <div class="portfolio-card">
                     <div class="portfolio-image">
-                        <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #FA709A, #FEE140);">
-                            <i data-lucide="building-2"></i>
+                        <div class="portfolio-overlay">
+                            <h3>Real Estate Website</h3>
+                            <p>Prime Properties</p>
+                            <a href="https://wa.me/918629933125?text=Show%20me%20Real%20Estate%20demo" class="btn-view" target="_blank">
+                                <i class="fas fa-eye"></i> View Demo
+                            </a>
                         </div>
                     </div>
-                    <div class="portfolio-content">
-                        <span class="portfolio-category">Real Estate</span>
-                        <h3 class="portfolio-name">Horizon Realty</h3>
-                        <p class="portfolio-desc">Real estate listing website with property showcase and filters</p>
-                        <div class="portfolio-tags">
-                            <span class="tech-tag">Listings</span>
-                            <span class="tech-tag">Filters</span>
-                            <span class="tech-tag">Gallery</span>
-                        </div>
-                        <a href="https://theunlocksales.github.io/realestate/" target="_blank" class="btn-view">
-                            <i data-lucide="eye"></i> View Demo
-                        </a>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Portfolio CTA -->
-            <div class="portfolio-cta reveal-bottom">
-                <div class="cta-icon">
-                    <i data-lucide="globe"></i>
-                </div>
-                <h3>Need a Professional Website?</h3>
-                <p>Get your business online with our mobile-first, SEO-optimized websites. Starting from just ₹2,499 with lifetime support!</p>
-                <div class="cta-buttons">
-                    <a href="https://api.whatsapp.com/send?phone=918629933125&text=I%20want%20a%20professional%20website%20for%20my%20business" target="_blank" class="btn-primary">
-                        <i data-lucide="shopping-cart"></i> Order Website
-                    </a>
-                    <a href="#contact" class="btn-secondary" style="background: var(--white); color: var(--navy-primary); border-color: var(--navy-primary);">
-                        <i data-lucide="phone"></i> Discuss Requirements
-                    </a>
+                    <div class="portfolio-gradient" style="background: linear-gradient(135deg, #FA709A, #FEE140);"></div>
+                    <div class="portfolio-icon"><i class="fas fa-building"></i></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ==================== CONTACT SECTION ==================== -->
-    <section class="contact-section" id="contact">
+    <!-- CONTACT SECTION -->
+    <section class="contact" id="contact">
         <div class="container">
-            <div class="section-header reveal-top">
-                <span class="section-tag">GET IN TOUCH</span>
-                <h2 class="section-title">
-                    Let's <span class="highlight">Unlock</span> Your Business Growth
-                </h2>
-                <p class="section-subtitle">
-                    Ready to scale your business? Contact us today for databases, websites, and digital marketing services.
-                </p>
+            <div class="section-header">
+                <span class="section-tag">Get In Touch</span>
+                <h2 class="section-title">Let's <span class="highlight">Unlock</span> Your Business Growth</h2>
+                <p class="section-description">Ready to scale your business? Contact us today for databases, websites, and digital marketing</p>
             </div>
-            
-            <div class="contact-content">
-                <div class="contact-info reveal-left">
-                    <p class="contact-description">
-                        Whether you need verified business databases, a professional website, or comprehensive digital marketing services - we're here to help you unlock new opportunities and grow your business.
-                    </p>
-                    
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i data-lucide="phone"></i>
-                            </div>
-                            <div>
-                                <h4>WhatsApp / Call</h4>
-                                <a href="https://api.whatsapp.com/send?phone=918629933125&text=Hi%20TUS,%20I%20want%20to%20discuss%20business%20growth" target="_blank">
-                                    +91 86299 33125
-                                </a>
-                            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
                         </div>
-                        
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i data-lucide="map-pin"></i>
-                            </div>
-                            <div>
-                                <h4>Locations</h4>
-                                <p style="color: var(--gold-primary); font-weight: 600; margin-top: 8px;">
-                                    Opening Soon: Indore | Surat | Ahmedabad
-                                </p>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i data-lucide="clock"></i>
-                            </div>
-                            <div>
-                                <h4>Working Hours</h4>
-                                <p>Monday - Saturday: 9:00 AM - 8:00 PM</p>
-                                <p>Sunday: Closed</p>
-                            </div>
+                        <div>
+                            <h4>Call / WhatsApp</h4>
+                            <p>+91 86299 33125</p>
                         </div>
                     </div>
-                    
-                    <div class="social-links">
-                        <a href="https://api.whatsapp.com/send?phone=918629933125" target="_blank" aria-label="WhatsApp">
-                            <i data-lucide="message-circle"></i>
-                        </a>
-                        <a href="#" target="_blank" aria-label="Facebook">
-                            <i data-lucide="facebook"></i>
-                        </a>
-                        <a href="#" target="_blank" aria-label="Instagram">
-                            <i data-lucide="instagram"></i>
-                        </a>
-                        <a href="#" target="_blank" aria-label="LinkedIn">
-                            <i data-lucide="linkedin"></i>
-                        </a>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Satellite Junction, Indore</p>
+                            <p class="opening-soon">Opening Soon: Indore</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div>
+                            <h4>Working Hours</h4>
+                            <p>Mon - Sat: 9:00 AM - 8:00 PM</p>
+                        </div>
                     </div>
                 </div>
-                
-                <div class="contact-form-wrapper reveal-right">
-                    <form class="contact-form" id="contactForm">
-                        <h3>Send Us a Message</h3>
-                        <p>Fill out the form and we'll get back to you within 24 hours</p>
-                        
+
+                <div class="contact-form">
+                    <form id="contactForm">
                         <div class="form-group">
                             <input type="text" id="name" placeholder="Your Name *" required>
                         </div>
-                        
                         <div class="form-group">
                             <input type="tel" id="phone" placeholder="WhatsApp Number *" required maxlength="10">
                         </div>
-                        
                         <div class="form-group">
                             <select id="service" required>
                                 <option value="">Select Service *</option>
-                                <option value="40 Category Database - ₹2,999">🏆 40 Category Database - ₹2,999</option>
-                                <option value="Professional Website - ₹2,499">⭐ Professional Website - ₹2,499</option>
-                                <option value="Digital Marketing">Digital Marketing</option>
-                                <option value="Specific Category Database">Specific Category Database</option>
-                                <option value="State Database">State Database</option>
-                                <option value="Bundle Package">Bundle Package</option>
+                                <option value="Database">40 Category Database - ₹2,999</option>
+                                <option value="Website">Professional Website - ₹2,499</option>
+                                <option value="Marketing">Digital Marketing</option>
                                 <option value="Other">Other</option>
                             </select>
                         </div>
-                        
                         <div class="form-group">
                             <textarea id="message" rows="4" placeholder="Your Message (Optional)"></textarea>
                         </div>
-                        
                         <button type="submit" class="btn-submit">
-                            <i data-lucide="send"></i> Send Message via WhatsApp
+                            <i class="fab fa-whatsapp"></i> Send via WhatsApp
                         </button>
-                        
-                        <p class="form-note">
-                            💬 You'll be redirected to WhatsApp to complete your inquiry
-                        </p>
                     </form>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ==================== FOOTER ==================== -->
+    <!-- FOOTER -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-col">
                     <div class="footer-logo">
-                        <div class="logo-icon">TUS</div>
-                        <div class="logo-text">
-                            <span class="logo-name">The Unlock Sales</span>
-                            <span class="logo-tagline">Unlock Growth & Leads</span>
+                        <div class="logo-circle">TUS</div>
+                        <div>
+                            <h3>The Unlock Sales</h3>
+                            <p>Unlock Growth & Leads</p>
                         </div>
                     </div>
-                    <p>
-                        India's first digital marketing agency providing 40-category business databases with complete website and marketing solutions.
-                    </p>
-                    <div class="footer-social">
-                        <a href="https://api.whatsapp.com/send?phone=918629933125" target="_blank" aria-label="WhatsApp">
-                            <i data-lucide="message-circle"></i>
-                        </a>
-                        <a href="#" target="_blank" aria-label="Facebook">
-                            <i data-lucide="facebook"></i>
-                        </a>
-                        <a href="#" target="_blank" aria-label="Instagram">
-                            <i data-lucide="instagram"></i>
-                        </a>
-                        <a href="#" target="_blank" aria-label="LinkedIn">
-                            <i data-lucide="linkedin"></i>
-                        </a>
-                    </div>
+                    <p class="footer-desc">India's first digital marketing agency providing 40-category business databases with complete website and marketing solutions.</p>
                 </div>
-                
+
                 <div class="footer-col">
                     <h4>Quick Links</h4>
                     <ul>
                         <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#about">About</a></li>
                         <li><a href="#services">Services</a></li>
                         <li><a href="#portfolio">Portfolio</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-col">
                     <h4>Our Services</h4>
                     <ul>
                         <li><a href="#services">Business Database</a></li>
                         <li><a href="#services">Website Creation</a></li>
                         <li><a href="#services">Digital Marketing</a></li>
-                        <li><a href="#services">Social Media</a></li>
-                        <li><a href="#services">Lead Generation</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-col">
-                    <h4>Contact Info</h4>
+                    <h4>Contact</h4>
                     <ul class="footer-contact">
-                        <li>
-                            <i data-lucide="phone"></i>
-                            <span>+91 86299 33125</span>
-                        </li>
-                        <li>
-                            <i data-lucide="map-pin"></i>
-                            <span>Pune, Maharashtra</span>
-                        </li>
-                        <li>
-                            <i data-lucide="clock"></i>
-                            <span>Mon-Sat: 9AM-8PM</span>
-                        </li>
+                        <li><i class="fas fa-phone"></i> +91 86299 33125</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Satellite Junction, Indore</li>
                     </ul>
                 </div>
             </div>
-            
+
             <div class="footer-bottom">
                 <p>&copy; 2025 The Unlock Sales. All Rights Reserved.</p>
-                <p>Made with <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg> for Indian Businesses</p>
             </div>
         </div>
     </footer>
 
-    <!-- ==================== FLOATING WHATSAPP ==================== -->
-    <a href="https://api.whatsapp.com/send?phone=918629933125&text=Hi%20TUS,%20I%20want%20to%20discuss%20business%20growth" target="_blank" class="floating-whatsapp" aria-label="Chat on WhatsApp">
-        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
-        <span>Chat with Us</span>
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/918629933125?text=Hi%20TUS" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
     </a>
 
-    <!-- ==================== BACK TO TOP ==================== -->
-    <button class="back-to-top" id="backToTop" aria-label="Back to Top">
-        <i data-lucide="arrow-up"></i>
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
     </button>
 
     <!-- JavaScript -->
@@ -761,5 +445,3 @@
 
 </body>
 </html>
-
-
