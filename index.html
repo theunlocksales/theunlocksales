@@ -3,937 +3,264 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Unlock Sales - Professional Websites at ₹2,500</title>
-    <meta name="description" content="Get your professional, mobile-first website for just ₹2,500. Fast delivery, SEO ready, and WhatsApp support. Order now!">
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome -->
+    <title>The Unlock Sales - World-Class Web Development Agency</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        :root {
-            --navy-primary: #0A1628;
-            --navy-secondary: #1B2B44;
-            --navy-light: #2C3E5C;
-            --gold-primary: #D4AF37;
-            --gold-secondary: #F4D03F;
-            --gold-light: #FFE5A0;
-            --white: #FFFFFF;
-            --light-bg: #F8F9FA;
-        }
-
-        body {
-            font-family: 'Poppins', sans-serif;
-            color: var(--navy-primary);
-            background: var(--white);
-            overflow-x: hidden;
-            line-height: 1.6;
-        }
-
-        /* Smooth Scroll */
-        html {
-            scroll-behavior: smooth;
-        }
-
-        /* Container */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        /* Floating WhatsApp Button */
-        .whatsapp-float {
-            position: fixed;
-            width: 60px;
-            height: 60px;
-            bottom: 25px;
-            right: 25px;
-            background: linear-gradient(135deg, #25D366, #128C7E);
-            color: white;
-            border-radius: 50%;
-            text-align: center;
-            font-size: 32px;
-            box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
-            z-index: 1000;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.3s ease;
-            animation: pulse 2s infinite;
-        }
-
-        .whatsapp-float:hover {
-            transform: scale(1.1);
-            box-shadow: 0 10px 30px rgba(37, 211, 102, 0.6);
-        }
-
-        @keyframes pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-        }
-
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(135deg, var(--navy-primary) 0%, var(--navy-secondary) 100%);
-            color: var(--white);
-            padding: 100px 0 120px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            width: 500px;
-            height: 500px;
-            background: radial-gradient(circle, rgba(212, 175, 55, 0.1) 0%, transparent 70%);
-            top: -100px;
-            right: -100px;
-            border-radius: 50%;
-            animation: float 6s ease-in-out infinite;
-        }
-
-        .hero::after {
-            content: '';
-            position: absolute;
-            width: 400px;
-            height: 400px;
-            background: radial-gradient(circle, rgba(212, 175, 55, 0.08) 0%, transparent 70%);
-            bottom: -150px;
-            left: -100px;
-            border-radius: 50%;
-            animation: float 8s ease-in-out infinite reverse;
-        }
-
-        @keyframes float {
-            0%, 100% { transform: translateY(0px) scale(1); }
-            50% { transform: translateY(-30px) scale(1.05); }
-        }
-
-        .hero-content {
-            position: relative;
-            z-index: 2;
-            text-align: center;
-        }
-
-        .hero h1 {
-            font-size: 2.8rem;
-            font-weight: 800;
-            line-height: 1.2;
-            margin-bottom: 20px;
-            background: linear-gradient(135deg, var(--white), var(--gold-light));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            animation: fadeInUp 0.8s ease;
-        }
-
-        .hero .subtitle {
-            font-size: 1.1rem;
-            color: var(--gold-light);
-            margin-bottom: 40px;
-            font-weight: 400;
-            animation: fadeInUp 1s ease;
-        }
-
-        .hero-buttons {
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-            flex-wrap: wrap;
-            animation: fadeInUp 1.2s ease;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 16px 40px;
-            border-radius: 50px;
-            font-weight: 600;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            font-size: 1rem;
-            border: 2px solid transparent;
-        }
-
-        .btn-primary {
-            background: linear-gradient(135deg, var(--gold-primary), var(--gold-secondary));
-            color: var(--navy-primary);
-            box-shadow: 0 8px 20px rgba(212, 175, 55, 0.3);
-        }
-
-        .btn-primary:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 12px 30px rgba(212, 175, 55, 0.5);
-        }
-
-        .btn-secondary {
-            background: transparent;
-            color: var(--white);
-            border: 2px solid var(--gold-primary);
-        }
-
-        .btn-secondary:hover {
-            background: var(--gold-primary);
-            color: var(--navy-primary);
-            transform: translateY(-3px);
-        }
-
-        /* Decorative Shapes */
-        .hero-shapes {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            overflow: hidden;
-            z-index: 1;
-        }
-
-        .shape {
-            position: absolute;
-            opacity: 0.05;
-        }
-
-        .shape-1 {
-            top: 20%;
-            left: 10%;
-            width: 80px;
-            height: 80px;
-            border: 3px solid var(--gold-primary);
-            border-radius: 20px;
-            animation: rotate 10s linear infinite;
-        }
-
-        .shape-2 {
-            top: 60%;
-            right: 15%;
-            width: 100px;
-            height: 100px;
-            border: 3px solid var(--gold-primary);
-            border-radius: 50%;
-            animation: rotate 15s linear infinite reverse;
-        }
-
-        @keyframes rotate {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
-        }
-
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        /* Why Choose Us Section */
-        .why-choose {
-            padding: 80px 0;
-            background: var(--light-bg);
-        }
-
-        .section-title {
-            text-align: center;
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: var(--navy-primary);
-            margin-bottom: 50px;
-            position: relative;
-        }
-
-        .section-title::after {
-            content: '';
-            display: block;
-            width: 80px;
-            height: 4px;
-            background: linear-gradient(90deg, var(--gold-primary), var(--gold-secondary));
-            margin: 20px auto 0;
-            border-radius: 2px;
-        }
-
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            margin-top: 50px;
-        }
-
-        .feature-card {
-            background: var(--white);
-            padding: 40px 30px;
-            border-radius: 20px;
-            text-align: center;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-            transition: all 0.4s ease;
-            opacity: 0;
-            transform: translateY(30px);
-        }
-
-        .feature-card.reveal {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        .feature-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 40px rgba(212, 175, 55, 0.2);
-        }
-
-        .feature-icon {
-            width: 70px;
-            height: 70px;
-            margin: 0 auto 20px;
-            background: linear-gradient(135deg, var(--gold-primary), var(--gold-secondary));
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 32px;
-            color: var(--navy-primary);
-        }
-
-        .feature-card h3 {
-            font-size: 1.3rem;
-            color: var(--navy-primary);
-            margin-bottom: 10px;
-            font-weight: 600;
-        }
-
-        .feature-card p {
-            color: var(--navy-light);
-            font-size: 0.95rem;
-        }
-
-        /* Pricing Section */
-        .pricing {
-            padding: 80px 0;
-            background: var(--white);
-        }
-
-        .pricing-card {
-            max-width: 600px;
-            margin: 50px auto 0;
-            background: linear-gradient(135deg, var(--navy-primary), var(--navy-secondary));
-            padding: 50px 40px;
-            border-radius: 30px;
-            box-shadow: 0 20px 60px rgba(10, 22, 40, 0.3);
-            position: relative;
-            overflow: hidden;
-            opacity: 0;
-            transform: scale(0.9);
-            transition: all 0.5s ease;
-        }
-
-        .pricing-card.reveal {
-            opacity: 1;
-            transform: scale(1);
-        }
-
-        .pricing-card::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            right: -50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle, rgba(212, 175, 55, 0.1) 0%, transparent 70%);
-            animation: rotate 20s linear infinite;
-        }
-
-        .pricing-header {
-            text-align: center;
-            margin-bottom: 30px;
-            position: relative;
-            z-index: 2;
-        }
-
-        .pricing-title {
-            font-size: 2rem;
-            color: var(--gold-primary);
-            font-weight: 700;
-            margin-bottom: 10px;
-        }
-
-        .price {
-            font-size: 3.5rem;
-            color: var(--white);
-            font-weight: 800;
-        }
-
-        .price span {
-            font-size: 1.5rem;
-            color: var(--gold-light);
-        }
-
-        .pricing-features {
-            list-style: none;
-            margin: 30px 0;
-            position: relative;
-            z-index: 2;
-        }
-
-        .pricing-features li {
-            color: var(--white);
-            padding: 15px 0;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-            font-size: 1rem;
-            display: flex;
-            align-items: center;
-        }
-
-        .pricing-features li i {
-            color: var(--gold-primary);
-            margin-right: 15px;
-            font-size: 18px;
-        }
-
-        .pricing-cta {
-            text-align: center;
-            margin-top: 40px;
-            position: relative;
-            z-index: 2;
-        }
-
-        /* Portfolio Section */
-        .portfolio {
-            padding: 80px 0;
-            background: var(--light-bg);
-        }
-
-        .portfolio-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 30px;
-            margin-top: 50px;
-        }
-
-        .portfolio-card {
-            background: var(--white);
-            border-radius: 20px;
-            overflow: hidden;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-            transition: all 0.4s ease;
-            opacity: 0;
-            transform: translateY(30px);
-        }
-
-        .portfolio-card.reveal {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        .portfolio-card:hover {
-            transform: translateY(-10px) rotateY(2deg);
-            box-shadow: 0 20px 50px rgba(212, 175, 55, 0.3);
-        }
-
-        .portfolio-image {
-            height: 200px;
-            background: linear-gradient(135deg, var(--navy-secondary), var(--navy-light));
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 3rem;
-            color: var(--gold-primary);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .portfolio-image::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.2), transparent);
-            transition: left 0.5s;
-        }
-
-        .portfolio-card:hover .portfolio-image::after {
-            left: 100%;
-        }
-
-        .portfolio-content {
-            padding: 25px;
-        }
-
-        .portfolio-category {
-            display: inline-block;
-            background: linear-gradient(135deg, var(--gold-primary), var(--gold-secondary));
-            color: var(--navy-primary);
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            font-weight: 600;
-            margin-bottom: 10px;
-        }
-
-        .portfolio-card h3 {
-            font-size: 1.4rem;
-            color: var(--navy-primary);
-            margin-bottom: 10px;
-            font-weight: 600;
-        }
-
-        .portfolio-card p {
-            color: var(--navy-light);
-            font-size: 0.9rem;
-            margin-bottom: 15px;
-            line-height: 1.6;
-        }
-
-        .portfolio-features {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            margin-bottom: 20px;
-        }
-
-        .portfolio-tag {
-            background: var(--light-bg);
-            color: var(--navy-secondary);
-            padding: 5px 12px;
-            border-radius: 15px;
-            font-size: 0.8rem;
-            font-weight: 500;
-        }
-
-        /* How It Works Section */
-        .how-it-works {
-            padding: 80px 0;
-            background: var(--white);
-        }
-
-        .steps-container {
-            max-width: 900px;
-            margin: 50px auto 0;
-            position: relative;
-        }
-
-        .step {
-            display: flex;
-            align-items: center;
-            margin-bottom: 50px;
-            position: relative;
-            opacity: 0;
-            transform: translateX(-50px);
-            transition: all 0.6s ease;
-        }
-
-        .step.reveal {
-            opacity: 1;
-            transform: translateX(0);
-        }
-
-        .step-number {
-            width: 80px;
-            height: 80px;
-            background: linear-gradient(135deg, var(--gold-primary), var(--gold-secondary));
-            color: var(--navy-primary);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2rem;
-            font-weight: 800;
-            flex-shrink: 0;
-            margin-right: 30px;
-            box-shadow: 0 8px 20px rgba(212, 175, 55, 0.3);
-        }
-
-        .step-content {
-            flex: 1;
-        }
-
-        .step-content h3 {
-            font-size: 1.5rem;
-            color: var(--navy-primary);
-            margin-bottom: 10px;
-            font-weight: 600;
-        }
-
-        .step-content p {
-            color: var(--navy-light);
-            font-size: 1rem;
-            line-height: 1.6;
-        }
-
-        /* FAQ Section */
-        .faq {
-            padding: 80px 0;
-            background: var(--light-bg);
-        }
-
-        .faq-container {
-            max-width: 800px;
-            margin: 50px auto 0;
-        }
-
-        .faq-item {
-            background: var(--white);
-            margin-bottom: 20px;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
-            opacity: 0;
-            transform: translateY(20px);
-            transition: all 0.4s ease;
-        }
-
-        .faq-item.reveal {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        .faq-question {
-            padding: 25px 30px;
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: var(--white);
-            transition: all 0.3s ease;
-        }
-
-        .faq-question:hover {
-            background: var(--light-bg);
-        }
-
-        .faq-question h3 {
-            font-size: 1.1rem;
-            color: var(--navy-primary);
-            font-weight: 600;
-            flex: 1;
-        }
-
-        .faq-icon {
-            width: 30px;
-            height: 30px;
-            background: linear-gradient(135deg, var(--gold-primary), var(--gold-secondary));
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--navy-primary);
-            font-weight: 700;
-            transition: transform 0.3s ease;
-        }
-
-        .faq-item.active .faq-icon {
-            transform: rotate(45deg);
-        }
-
-        .faq-answer {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.4s ease, padding 0.4s ease;
-        }
-
-        .faq-item.active .faq-answer {
-            max-height: 500px;
-            padding: 0 30px 25px;
-        }
-
-        .faq-answer p {
-            color: var(--navy-light);
-            line-height: 1.8;
-            font-size: 0.95rem;
-        }
-
-        /* Contact Section */
-        .contact {
-            padding: 80px 0;
-            background: var(--white);
-        }
-
-        .contact-content {
-            max-width: 700px;
-            margin: 50px auto 0;
-            text-align: center;
-        }
-
-        .contact-info {
-            background: linear-gradient(135deg, var(--navy-primary), var(--navy-secondary));
-            padding: 40px;
-            border-radius: 20px;
-            margin-bottom: 40px;
-            box-shadow: 0 15px 40px rgba(10, 22, 40, 0.2);
-        }
-
-        .contact-info h3 {
-            color: var(--gold-primary);
-            font-size: 1.5rem;
-            margin-bottom: 20px;
-            font-weight: 600;
-        }
-
-        .whatsapp-number {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 15px;
-            font-size: 1.8rem;
-            color: var(--white);
-            font-weight: 700;
-            margin-bottom: 15px;
-        }
-
-        .response-time {
-            color: var(--gold-light);
-            font-size: 1rem;
-            font-weight: 400;
-        }
-
-        .contact-form {
-            background: var(--light-bg);
-            padding: 40px;
-            border-radius: 20px;
-        }
-
-        .form-group {
-            margin-bottom: 20px;
-            text-align: left;
-        }
-
-        .form-group label {
-            display: block;
-            color: var(--navy-primary);
-            font-weight: 600;
-            margin-bottom: 8px;
-            font-size: 0.95rem;
-        }
-
-        .form-group input,
-        .form-group textarea {
-            width: 100%;
-            padding: 15px;
-            border: 2px solid transparent;
-            border-radius: 10px;
-            font-family: 'Poppins', sans-serif;
-            font-size: 0.95rem;
-            background: var(--white);
-            transition: all 0.3s ease;
-        }
-
-        .form-group input:focus,
-        .form-group textarea:focus {
-            outline: none;
-            border-color: var(--gold-primary);
-            box-shadow: 0 0 0 4px rgba(212, 175, 55, 0.1);
-        }
-
-        .form-group textarea {
-            resize: vertical;
-            min-height: 120px;
-        }
-
-        /* Footer */
-        footer {
-            background: var(--navy-primary);
-            color: var(--white);
-            padding: 30px 0;
-            text-align: center;
-        }
-
-        footer p {
-            font-size: 0.95rem;
-            color: var(--gold-light);
-        }
-
-        /* Mobile Responsive */
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2rem;
-            }
-
-            .hero .subtitle {
-                font-size: 0.95rem;
-            }
-
-            .hero-buttons {
-                flex-direction: column;
-                align-items: stretch;
-            }
-
-            .btn {
-                width: 100%;
-                text-align: center;
-            }
-
-            .section-title {
-                font-size: 2rem;
-            }
-
-            .features-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .portfolio-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .step {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .step-number {
-                margin-right: 0;
-                margin-bottom: 20px;
-            }
-
-            .pricing-card {
-                padding: 40px 25px;
-            }
-
-            .price {
-                font-size: 2.5rem;
-            }
-
-            .whatsapp-number {
-                font-size: 1.3rem;
-                flex-direction: column;
-                gap: 10px;
-            }
-
-            .contact-form,
-            .contact-info {
-                padding: 30px 20px;
-            }
-
-            .whatsapp-float {
-                width: 55px;
-                height: 55px;
-                bottom: 20px;
-                right: 20px;
-                font-size: 28px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .hero {
-                padding: 80px 0 100px;
-            }
-
-            .hero h1 {
-                font-size: 1.7rem;
-            }
-
-            .section-title {
-                font-size: 1.7rem;
-            }
-
-            .pricing-title {
-                font-size: 1.5rem;
-            }
-
-            .price {
-                font-size: 2rem;
-            }
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
-<body>
+<body data-theme="dark">
 
-    <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/918629933125?text=Hi%2C%20I%20want%20a%20professional%20website%20for%20%E2%82%B92%2C500" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
-        <i class="fab fa-whatsapp"></i>
-    </a>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">The Unlock Sales</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-sun"></i>
+                </button>
+                <button class="mobile-toggle" id="mobileToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-shapes">
-            <div class="shape shape-1"></div>
-            <div class="shape shape-2"></div>
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+            <canvas id="particleCanvas"></canvas>
         </div>
-        <div class="container">
-            <div class="hero-content">
-                <h1>Get Your Professional Website<br>for Just ₹2,500</h1>
-                <p class="subtitle">Mobile-First • SEO Ready • WhatsApp Button • Delivered Fast</p>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">We Build World-Class</span>
+                    <span class="title-line gradient-text">Websites That Convert.</span>
+                </h1>
+                <p class="hero-subtitle">Premium design. Powerful performance. Delivered with cutting-edge AI + expert craftsmanship.</p>
                 <div class="hero-buttons">
-                    <a href="https://wa.me/918629933125?text=Hi%2C%20I%20want%20a%20professional%20website%20for%20%E2%82%B92%2C500" class="btn btn-primary" target="_blank">
-                        <i class="fab fa-whatsapp"></i> Get My Website
+                    <a href="#contact" class="btn btn-primary">
+                        <span>Get Free Website Audit</span>
+                        <i class="fas fa-arrow-right"></i>
                     </a>
-                    <a href="#portfolio" class="btn btn-secondary">See Our Work</a>
+                    <a href="https://wa.me/918629933125" class="btn btn-secondary" target="_blank">
+                        <span>Book Strategy Call</span>
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
                 </div>
             </div>
+            <div class="hero-visual">
+                <div class="floating-card card-1">
+                    <div class="card-content">
+                        <i class="fas fa-rocket"></i>
+                        <span>95+ Page Speed</span>
+                    </div>
+                </div>
+                <div class="floating-card card-2">
+                    <div class="card-content">
+                        <i class="fas fa-globe"></i>
+                        <span>Global Clients</span>
+                    </div>
+                </div>
+                <div class="floating-card card-3">
+                    <div class="card-content">
+                        <i class="fas fa-award"></i>
+                        <span>Premium Quality</span>
+                    </div>
+                </div>
+                <div class="hero-3d-shape"></div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <span>Scroll</span>
         </div>
     </section>
 
     <!-- Why Choose Us Section -->
-    <section class="why-choose" id="why-choose">
+    <section class="why-choose" id="about">
         <div class="container">
-            <h2 class="section-title">Why Choose Us</h2>
+            <div class="section-header">
+                <span class="section-tag">Why Choose Us</span>
+                <h2 class="section-title">A New Standard of <span class="gradient-text">Modern Web Development</span></h2>
+            </div>
             <div class="features-grid">
-                <div class="feature-card">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="0">
                     <div class="feature-icon">
-                        <i class="fas fa-mobile-alt"></i>
+                        <i class="fas fa-palette"></i>
                     </div>
-                    <h3>100% Mobile-First</h3>
-                    <p>Designed for perfect viewing on smartphones and all devices</p>
+                    <h3>Premium Custom Designs</h3>
+                    <p>Not templates. Only tailored experiences crafted specifically for your brand identity.</p>
                 </div>
-                <div class="feature-card">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="feature-icon">
-                        <i class="fas fa-search"></i>
+                        <i class="fas fa-chart-line"></i>
                     </div>
-                    <h3>SEO Optimized</h3>
-                    <p>Built with proper titles and descriptions for better Google ranking</p>
+                    <h3>Conversion-Focused</h3>
+                    <p>Every pixel crafted for results. Strategic design that drives engagement and sales.</p>
                 </div>
-                <div class="feature-card">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="feature-icon">
-                        <i class="fas fa-rocket"></i>
+                        <i class="fas fa-bolt"></i>
                     </div>
-                    <h3>Fast Delivery</h3>
-                    <p>Your website delivered quickly without compromising quality</p>
+                    <h3>Lightning Fast Performance</h3>
+                    <p>95+ page speed scores. Optimized code and assets for instant loading times.</p>
                 </div>
-                <div class="feature-card">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
                     <div class="feature-icon">
-                        <i class="fab fa-whatsapp"></i>
+                        <i class="fas fa-magic"></i>
                     </div>
-                    <h3>WhatsApp Support</h3>
-                    <p>Direct communication and support via WhatsApp</p>
+                    <h3>Advanced Animations</h3>
+                    <p>Micro-interactions, smooth transitions, and 3D UI elements that captivate users.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <h3>Professional Brand Experience</h3>
+                    <p>Elevate trust and credibility with world-class design that commands attention.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Built With AI + Human Expertise</h3>
+                    <p>Faster, smarter, cleaner. The perfect blend of technology and craftsmanship.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Pricing Section -->
-    <section class="pricing" id="pricing">
+    <!-- Services Section -->
+    <section class="services" id="services">
         <div class="container">
-            <h2 class="section-title">Website @ ₹2,500</h2>
-            <div class="pricing-card">
-                <div class="pricing-header">
-                    <div class="pricing-title">Professional Website Package</div>
-                    <div class="price"><span>₹</span>2,500</div>
+            <div class="section-header">
+                <span class="section-tag">Our Expertise</span>
+                <h2 class="section-title">Services That <span class="gradient-text">Transform Businesses</span></h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-aos="zoom-in">
+                    <div class="service-icon">
+                        <i class="fas fa-pencil-ruler"></i>
+                    </div>
+                    <h3>Web Design & UI/UX</h3>
+                    <p>Modern, clean, user-centered interfaces that deliver exceptional experiences across all devices.</p>
+                    <div class="service-hover-effect"></div>
                 </div>
-                <ul class="pricing-features">
-                    <li><i class="fas fa-check-circle"></i> 4-Page Website (Home, About, Services, Contact)</li>
-                    <li><i class="fas fa-check-circle"></i> WhatsApp Chat Button</li>
-                    <li><i class="fas fa-check-circle"></i> Google Map Embed</li>
-                    <li><i class="fas fa-check-circle"></i> Clean & Modern UI</li>
-                    <li><i class="fas fa-check-circle"></i> Basic SEO (Title + Description)</li>
-                    <li><i class="fas fa-check-circle"></i> Fast Loading Speed</li>
-                    <li><i class="fas fa-check-circle"></i> Simple, Professional Design</li>
-                    <li><i class="fas fa-check-circle"></i> 1 Round of Edits Free</li>
-                </ul>
-                <div class="pricing-cta">
-                    <a href="https://wa.me/918629933125?text=Hi%2C%20I%20want%20to%20order%20the%20%E2%82%B92%2C500%20website%20package" class="btn btn-primary" target="_blank">
-                        <i class="fab fa-whatsapp"></i> Order Your Website Now
-                    </a>
+                <div class="service-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Website Development</h3>
+                    <p>Fast, secure, scalable full-stack development with cutting-edge technologies and best practices.</p>
+                    <div class="service-hover-effect"></div>
+                </div>
+                <div class="service-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3>Web Redesign & Revamp</h3>
+                    <p>Transform outdated sites into premium experiences that reflect modern design standards.</p>
+                    <div class="service-hover-effect"></div>
+                </div>
+                <div class="service-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Landing Pages</h3>
+                    <p>High-converting pages for marketing campaigns, ads, and funnels that drive measurable results.</p>
+                    <div class="service-hover-effect"></div>
+                </div>
+                <div class="service-card" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="service-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>E-commerce Websites</h3>
+                    <p>Modern Shopify and WooCommerce stores designed to maximize sales and customer satisfaction.</p>
+                    <div class="service-hover-effect"></div>
+                </div>
+                <div class="service-card" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>Brand Identity & Visual Systems</h3>
+                    <p>Complete brand strategy including colors, typography, and cohesive visual language.</p>
+                    <div class="service-hover-effect"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Process</span>
+                <h2 class="section-title">A Seamless, <span class="gradient-text">Transparent Process</span></h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-number">01</div>
+                    <div class="timeline-content">
+                        <h3>Discovery Call</h3>
+                        <p>Understand your goals, target audience, and brand vision through in-depth consultation.</p>
+                    </div>
+                    <div class="timeline-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-number">02</div>
+                    <div class="timeline-content">
+                        <h3>Wireframe & Concept</h3>
+                        <p>Create visual blueprints and design direction that align with your business objectives.</p>
+                    </div>
+                    <div class="timeline-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-number">03</div>
+                    <div class="timeline-content">
+                        <h3>Development & Animations</h3>
+                        <p>Build a high-end digital experience with advanced animations and smooth interactions.</p>
+                    </div>
+                    <div class="timeline-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-number">04</div>
+                    <div class="timeline-content">
+                        <h3>Revisions</h3>
+                        <p>Tailored improvements based on your feedback to ensure perfect alignment with your vision.</p>
+                    </div>
+                    <div class="timeline-icon">
+                        <i class="fas fa-edit"></i>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-number">05</div>
+                    <div class="timeline-content">
+                        <h3>Launch & Optimization</h3>
+                        <p>Speed optimization, SEO implementation, and final polish before going live.</p>
+                    </div>
+                    <div class="timeline-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
                 </div>
             </div>
         </div>
@@ -942,325 +269,266 @@
     <!-- Portfolio Section -->
     <section class="portfolio" id="portfolio">
         <div class="container">
-            <h2 class="section-title">Our Top 6 Websites</h2>
+            <div class="section-header">
+                <span class="section-tag">Our Work</span>
+                <h2 class="section-title">Some of Our <span class="gradient-text">Best Work</span></h2>
+            </div>
             <div class="portfolio-grid">
-                <!-- Restaurant -->
-                <div class="portfolio-card">
+                <div class="portfolio-item" data-aos="fade-up">
                     <div class="portfolio-image">
-                        <i class="fas fa-utensils"></i>
-                    </div>
-                    <div class="portfolio-content">
-                        <span class="portfolio-category">Restaurant</span>
-                        <h3>Flavor Fusion Restaurant</h3>
-                        <p>A delightful dining experience website with menu showcase and online ordering</p>
-                        <div class="portfolio-features">
-                            <span class="portfolio-tag">Mobile-First</span>
-                            <span class="portfolio-tag">Menu Gallery</span>
-                            <span class="portfolio-tag">WhatsApp</span>
+                        <div class="portfolio-placeholder">
+                            <i class="fas fa-briefcase"></i>
                         </div>
-                        <a href="https://theunlocksales.github.io/cafe/" class="btn btn-primary" target="_blank" style="font-size: 0.9rem; padding: 12px 30px;">
-                            View Website
-                        </a>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3><a href="https://finarrow.in/">Finarrow.in</a></h3>
+                        <p>Modern Finance company website</p>
                     </div>
                 </div>
-
-                <!-- Jewellery -->
-                <div class="portfolio-card">
+                <div class="portfolio-item" data-aos="fade-up" data-aos-delay="100">
                     <div class="portfolio-image">
-                        <i class="fas fa-gem"></i>
-                    </div>
-                    <div class="portfolio-content">
-                        <span class="portfolio-category">Interior Design</span>
-                        <h3>Aura Interiors</h3>
-                        <p>Elegant showcase of premium interior designing work with stunning architecture</p>
-                        <div class="portfolio-features">
-                            <span class="portfolio-tag">Mobile-First</span>
-                            <span class="portfolio-tag">Image Gallery</span>
-                            <span class="portfolio-tag">WhatsApp</span>
+                        <div class="portfolio-placeholder">
+                            <i class="fas fa-store"></i>
                         </div>
-                        <a href="https://theunlocksales.github.io/interior/" class="btn btn-primary" target="_blank" style="font-size: 0.9rem; padding: 12px 30px;">
-                            View Website
-                        </a>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3><a href="https://theunlocksales.github.io/online/">E-commerce Platform</a></h3>
+                        <p>Premium online shopping experience</p>
                     </div>
                 </div>
-
-                <!-- Gym -->
-                <div class="portfolio-card">
+                <div class="portfolio-item" data-aos="fade-up" data-aos-delay="200">
                     <div class="portfolio-image">
-                        <i class="fas fa-dumbbell"></i>
-                    </div>
-                    <div class="portfolio-content">
-                        <span class="portfolio-category">Gym</span>
-                        <h3>Iron Forge Fitness</h3>
-                        <p>Dynamic fitness center website with membership plans and training programs</p>
-                        <div class="portfolio-features">
-                            <span class="portfolio-tag">Mobile-First</span>
-                            <span class="portfolio-tag">Services</span>
-                            <span class="portfolio-tag">WhatsApp</span>
+                        <div class="portfolio-placeholder">
+                            <i class="fas fa-rocket"></i>
                         </div>
-                        <a href="https://theunlocksales.github.io/gym/" class="btn btn-primary" target="_blank" style="font-size: 0.9rem; padding: 12px 30px;">
-                            View Website
-                        </a>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3><a href="https://theunlocksales.github.io/royaldesignstudiodemo2/">Interior Design</a></h3>
+                        <p>High-converting marketing site</p>
                     </div>
                 </div>
-
-              <!-- Coaching 
-                <div class="portfolio-card">
+                <div class="portfolio-item" data-aos="fade-up" data-aos-delay="300">
                     <div class="portfolio-image">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <div class="portfolio-content">
-                        <span class="portfolio-category">Coaching</span>
-                        <h3>Excel Coaching Institute</h3>
-                        <p>Professional education institute website with courses and admission details</p>
-                        <div class="portfolio-features">
-                            <span class="portfolio-tag">Mobile-First</span>
-                            <span class="portfolio-tag">Courses</span>
-                            <span class="portfolio-tag">WhatsApp</span>
+                        <div class="portfolio-placeholder">
+                            <i class="fas fa-building"></i>
                         </div>
-                        <a href="https://theunlocksales.github.io/coaching/" class="btn btn-primary" target="_blank" style="font-size: 0.9rem; padding: 12px 30px;">
-                            View Website
-                        </a>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3><a href="https://theunlocksales.github.io/travel/">Travel Website</a></h3>
+                        <p>Premium travel assistant</p>
                     </div>
                 </div>
-
-                -->
-
-                <!-- Hospital -->
-                <div class="portfolio-card">
+                <div class="portfolio-item" data-aos="fade-up" data-aos-delay="400">
                     <div class="portfolio-image">
-                        <i class="fas fa-hospital"></i>
-                    </div>
-                    <div class="portfolio-content">
-                        <span class="portfolio-category">Event planner</span>
-                        <h3>Enchanted Moments</h3>
-                        <p>Comprehensive event planning website with booking</p>
-                        <div class="portfolio-features">
-                            <span class="portfolio-tag">Mobile-First</span>
-                            <span class="portfolio-tag">Services</span>
-                            <span class="portfolio-tag">WhatsApp</span>
+                        <div class="portfolio-placeholder">
+                            <i class="fas fa-mobile-alt"></i>
                         </div>
-                        <a href="https://theunlocksales.github.io/event/" class="btn btn-primary" target="_blank" style="font-size: 0.9rem; padding: 12px 30px;">
-                            View Website
-                        </a>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3><a href="https://theunlocksales.github.io/event/">Event Management</a></h3>
+                        <p>Event planning made easy</p>
                     </div>
                 </div>
-
-                <!-- Real Estate -->
-                <div class="portfolio-card">
+                <div class="portfolio-item" data-aos="fade-up" data-aos-delay="500">
                     <div class="portfolio-image">
-                        <i class="fas fa-building"></i>
-                    </div>
-                    <div class="portfolio-content">
-                        <span class="portfolio-category">Real Estate</span>
-                        <h3>Horizon Realty</h3>
-                        <p>Modern property showcase website with listings and virtual tours</p>
-                        <div class="portfolio-features">
-                            <span class="portfolio-tag">Mobile-First</span>
-                            <span class="portfolio-tag">Gallery</span>
-                            <span class="portfolio-tag">WhatsApp</span>
+                        <div class="portfolio-placeholder">
+                            <i class="fas fa-chart-line"></i>
                         </div>
-                        <a href="https://theunlocksales.github.io/realestate/" class="btn btn-primary" target="_blank" style="font-size: 0.9rem; padding: 12px 30px;">
-                            View Website
-                        </a>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3><a href="https://theunlocksales.github.io/coaching/">Excel Academy</a></h3>
+                        <p>Professional Coaching institute website</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- How It Works Section -->
-    <section class="how-it-works" id="how-it-works">
+    <!-- Global Trust Section -->
+    <section class="global-trust">
         <div class="container">
-            <h2 class="section-title">How It Works</h2>
-            <div class="steps-container">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <div class="step-content">
-                        <h3>Share Details on WhatsApp</h3>
-                        <p>Contact us on WhatsApp and share your business details, requirements, and preferences. We'll guide you through the process.</p>
+            <div class="section-header">
+                <span class="section-tag">Global Reach</span>
+                <h2 class="section-title">Trusted by Businesses <span class="gradient-text">Worldwide</span></h2>
+            </div>
+            <div class="world-map-container">
+                <div class="map-marker marker-1" data-aos="zoom-in" data-aos-delay="0">
+                    <div class="marker-pulse"></div>
+                    <div class="marker-dot"></div>
+                </div>
+                <div class="map-marker marker-2" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="marker-pulse"></div>
+                    <div class="marker-dot"></div>
+                </div>
+                <div class="map-marker marker-3" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="marker-pulse"></div>
+                    <div class="marker-dot"></div>
+                </div>
+                <div class="map-marker marker-4" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="marker-pulse"></div>
+                    <div class="marker-dot"></div>
+                </div>
+                <div class="world-map">
+                    <svg viewBox="0 0 1200 600" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M200,150 L250,140 L280,160 L320,150 L350,170 L380,160 L420,180 L450,170 L480,190 M500,200 L550,210 L600,200 L650,220 L700,210 L750,230 M300,300 L350,310 L400,300 L450,320 L500,310 L550,330 M150,400 L200,410 L250,400 L300,420 L350,410 M700,350 L750,360 L800,350 L850,370 L900,360 L950,380" stroke="currentColor" stroke-width="2" fill="none" opacity="0.3"/>
+                        <circle cx="300" cy="200" r="3" fill="currentColor" opacity="0.5"/>
+                        <circle cx="600" cy="250" r="3" fill="currentColor" opacity="0.5"/>
+                        <circle cx="800" cy="300" r="3" fill="currentColor" opacity="0.5"/>
+                        <circle cx="400" cy="380" r="3" fill="currentColor" opacity="0.5"/>
+                    </svg>
+                </div>
+            </div>
+            <p class="global-text">We work with clients across the USA, Europe, Middle East & Asia.</p>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Testimonials</span>
+                <h2 class="section-title">What Our <span class="gradient-text">Clients Say</span></h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card" data-aos="fade-up">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"The Unlock Sales transformed our online presence completely. The attention to detail and premium design exceeded all expectations. Our conversion rate increased by 180%."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Ashish Soni</h4>
+                            <p>CEO, Finarrow.in</p>
+                        </div>
                     </div>
                 </div>
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <div class="step-content">
-                        <h3>We Start Building Your Website</h3>
-                        <p>Our team begins crafting your professional, mobile-first website with all the features included in the package.</p>
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Working with this team was an absolute pleasure. They understood our vision and delivered a website that truly represents our brand at a global level. Highly recommended!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Navdurga Graphics</h4>
+                            <p>Founder, Rajendra Chouhan</p>
+                        </div>
                     </div>
                 </div>
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <div class="step-content">
-                        <h3>Final Website Delivered After Payment</h3>
-                        <p>Review your completed website, request one free round of edits if needed, and receive the final version after payment.</p>
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Exceptional quality and professionalism. The animations and user experience are world-class. Our clients consistently compliment us on our website design."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Braj Nimkar</h4>
+                            <p>Director, HighRise Forex Hub</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- FAQ Section -->
-    <section class="faq" id="faq">
-        <div class="container">
-            <h2 class="section-title">Frequently Asked Questions</h2>
-            <div class="faq-container">
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>What do I get in ₹2,500?</h3>
-                        <div class="faq-icon">+</div>
-                    </div>
-                    <div class="faq-answer">
-                        <p>You get a complete 4-page professional website (Home, About, Services, Contact) with WhatsApp chat button, Google Map embed, clean modern UI, basic SEO optimization, fast loading speed, and one round of edits free. Perfect for small businesses and professionals.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>How long will development take?</h3>
-                        <div class="faq-icon">+</div>
-                    </div>
-                    <div class="faq-answer">
-                        <p>We deliver your website quickly, typically within 3-5 business days after receiving all your content and requirements. Rush delivery options are available on request.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>Do you provide hosting/domain?</h3>
-                        <div class="faq-icon">+</div>
-                    </div>
-                    <div class="faq-answer">
-                        <p>The ₹2,500 package includes website development only. Hosting and domain services are available separately at affordable rates. We can guide you through the process of setting up hosting and domain.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>Will my website work on mobile?</h3>
-                        <div class="faq-icon">+</div>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Absolutely! All our websites are mobile-first, meaning they're designed specifically for perfect viewing on smartphones first, then optimized for tablets and desktops. Your website will look great on all devices.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>What support do you provide after delivery?</h3>
-                        <div class="faq-icon">+</div>
-                    </div>
-                    <div class="faq-answer">
-                        <p>We provide WhatsApp support for any technical issues or questions. Minor content updates and bug fixes are handled promptly. We're always available to help you succeed online.</p>
-                    </div>
-                </div>
-            </div>
+    <!-- CTA Section -->
+    <section class="cta" id="contact">
+        <div class="cta-background">
+            <div class="cta-gradient"></div>
         </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
         <div class="container">
-            <h2 class="section-title">Get Your Website Today</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Contact Us on WhatsApp</h3>
-                    <div class="whatsapp-number">
+            <div class="cta-content" data-aos="zoom-in">
+                <h2>Ready to Upgrade Your Website?</h2>
+                <p>Let's build something exceptional together.</p>
+                <div class="cta-buttons">
+                    <a href="https://wa.me/918629933125?text=I%20want%20a%20free%20website%20audit" class="btn btn-primary" target="_blank">
+                        <span>Get Free Audit</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="https://wa.me/918629933125?text=I%20want%20to%20book%20a%20strategy%20call" class="btn btn-secondary" target="_blank">
+                        <span>Book Strategy Call</span>
                         <i class="fab fa-whatsapp"></i>
-                        <a href="https://wa.me/918629933125" style="color: inherit; text-decoration: none;">+91 86299 33125</a>
-                    </div>
-                    <p class="response-time">✨ We respond within 10 minutes</p>
-                </div>
-
-                <div class="contact-form">
-                    <form action="https://wa.me/918629933125" method="get" target="_blank">
-                        <div class="form-group">
-                            <label for="name">Your Name</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="business">Business Name</label>
-                            <input type="text" id="business" name="business" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="text" placeholder="Tell us about your requirements...">Hi, I want a professional website for ₹2,500</textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary" style="width: 100%;">
-                            <i class="fab fa-whatsapp"></i> Send Message on WhatsApp
-                        </button>
-                    </form>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 The Unlock Sales. All Rights Reserved.</p>
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>The Unlock Sales</h3>
+                    <p>We build world-class websites that convert. Premium design, powerful performance, and expert craftsmanship for businesses worldwide.</p>
+                    <div class="social-links">
+                        <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Web Design & UI/UX</a></li>
+                        <li><a href="#services">Website Development</a></li>
+                        <li><a href="#services">Web Redesign</a></li>
+                        <li><a href="#services">Landing Pages</a></li>
+                        <li><a href="#services">E-commerce</a></li>
+                        <li><a href="#services">Brand Identity</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#process">Our Process</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:contact@theunlocksales.com"><i class="fas fa-envelope"></i> contact@theunlocksales.com</a></li>
+                        <li><a href="https://wa.me/918629933125" target="_blank"><i class="fab fa-whatsapp"></i> +91 86299 33125</a></li>
+                        <li><a href="tel:+918629933125"><i class="fas fa-phone"></i> +91 86299 33125</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 The Unlock Sales. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 
-    <script>
-        // Scroll Reveal Animation
-        function reveal() {
-            const reveals = document.querySelectorAll('.feature-card, .portfolio-card, .pricing-card, .step, .faq-item');
-            
-            for (let i = 0; i < reveals.length; i++) {
-                const windowHeight = window.innerHeight;
-                const elementTop = reveals[i].getBoundingClientRect().top;
-                const elementVisible = 150;
-                
-                if (elementTop < windowHeight - elementVisible) {
-                    reveals[i].classList.add('reveal');
-                }
-            }
-        }
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/918629933125" class="whatsapp-float" target="_blank" aria-label="Contact us on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
-        window.addEventListener('scroll', reveal);
-        reveal(); // Initial check
-
-        // FAQ Accordion
-        const faqItems = document.querySelectorAll('.faq-item');
-        
-        faqItems.forEach(item => {
-            const question = item.querySelector('.faq-question');
-            
-            question.addEventListener('click', () => {
-                const isActive = item.classList.contains('active');
-                
-                // Close all items
-                faqItems.forEach(faq => faq.classList.remove('active'));
-                
-                // Open clicked item if it wasn't active
-                if (!isActive) {
-                    item.classList.add('active');
-                }
-            });
-        });
-
-        // Smooth scroll for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        // Add stagger animation to cards
-        window.addEventListener('load', () => {
-            const cards = document.querySelectorAll('.feature-card, .portfolio-card');
-            cards.forEach((card, index) => {
-                card.style.transitionDelay = `${index * 0.1}s`;
-            });
-        });
-    </script>
-
+    <script src="script.js"></script>
 </body>
 </html>
